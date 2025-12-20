@@ -1,0 +1,42 @@
+.md-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.md-table th {
+  background: #F3EDF7;
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.md-table td {
+  padding: 14px;
+  border-top: 1px solid #E7E0EC;
+  font-size: 14px;
+}
+
+.table-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.badge.active {
+  background: #E6F4EA;
+  color: #1E8E3E;
+}
+
+.badge.inactive {
+  background: #FCE8E6;
+  color: #D93025;
+}
