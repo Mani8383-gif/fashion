@@ -1,7 +1,35 @@
+:root {
+  --main-color: #e91e63;
+  --accent-color: #f8bbd0;
+  --text-color: #333;
+  --bg-color: #fff;
+  --light-gray: #f5f5f5;
+  --shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  --md-state-hover-opacity: 0.08;
+  --md-state-focus-opacity: 0.12;
+
+  /* Typography */
+  --md-font-family: "Roboto", "IRANSans", sans-serif;
+  --md-label-large-size: 0.875rem; /* 14px */
+  --md-label-large-weight: 500;
+
+  /* Shape */
+  --md-comp-button-radius: 12px;
+
+  /* Size */
+  --md-comp-button-height-sm: 40px;
+  --md-comp-button-padding-h: 16px;
+
+}
+
+
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-  background: #F7F2FA;
+  background: var(--accent-color);
+  direction: rtl;
+  
 }
 
 /* Layout Table */
@@ -22,7 +50,7 @@ body {
 
 .logo {
   font-size: 20px;
-  color: #6750A4;
+  color: var(--main-color);
   margin-bottom: 24px;
 }
 
@@ -31,13 +59,13 @@ body {
   padding: 10px 14px;
   margin-bottom: 8px;
   text-decoration: none;
-  color: #49454F;
+  color: black;
   border-radius: 6px;
 }
 
 .sidebar a:hover,
 .sidebar a.active {
-  background: #E8DEF8;
+  background: var(--accent-color);
   color: #1D192B;
 }
 
@@ -56,7 +84,7 @@ body {
 
 .dashboard-header p {
   font-size: 14px;
-  color: #6750A4;
+  color: black;
   margin-bottom: 20px;
 }
 
