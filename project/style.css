@@ -1,6 +1,7 @@
 :root {
   --main-color: #e91e63;
   --accent-color: #f8bbd0;
+  --second-color:#a53333;
   --text-color: #333;
   --bg-color: #fff;
   --light-gray: #f5f5f5;
@@ -22,6 +23,122 @@
   --md-comp-button-padding-h: 16px;
 
 }
+/* ==============================
+   MATERIAL DESIGN - BUTTON
+   ============================== */
+
+/* پایه دکمه */
+.md-btn {
+  font-family: Roboto, Arial, sans-serif;
+  padding: 10px 24px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+/* دکمه کاملاً گرد */
+.btn-round {
+  border-radius: 999px;
+}
+
+/* ---------- حالت‌ها (کلاس‌محور) ---------- */
+
+.btn-enabled {
+  opacity: 1;
+}
+
+.btn-disabled {
+  background-color: #d1d1d1;
+  color: #777;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-hover {
+  background-color: var(--main-color);
+}
+
+.btn-focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.btn-pressed {
+  background-color: var(--main-color);
+  transform: scale(0.97);
+}
+
+/* ---------- pseudo-class ---------- */
+
+.md-btn:hover:not(.btn-disabled) {
+  background-color: var();
+}
+
+.md-btn:focus:not(.btn-disabled) {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.md-btn:active:not(.btn-disabled) {
+  background-color: var(--second-color);
+  transform: scale(0.97);
+}
+
+
+
+/* ==============================
+   MATERIAL DESIGN - CARD
+   ============================== */
+
+/* پایه کارت */
+.md-card {
+  width: 280px;
+  padding: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ---------- حالت‌ها (کلاس‌محور) ---------- */
+
+.card-enabled {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.card-pressed {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transform: scale(0.98);
+}
+
+/* ---------- pseudo-class ---------- */
+
+.md-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.md-card:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.md-card:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transform: scale(0.98);
+}
+
 .logo{
   width: 40px;
   height: 60px;
@@ -158,6 +275,7 @@ h2 {
   border-radius: 10px;
   box-shadow: var(--shadow);
   text-align: center;
+  margin: 15px;
   padding: 15px;
   transition: transform 0.3s ease;
 }
@@ -311,7 +429,9 @@ input, select {
   background: color-mix(in srgb, var(--main-color), black 10%);
    color: var(--bg-color);
 }
-
+.m3-nav-btn:active{
+  background-color: var(--main-color);
+}
 /* Active */
 .m3-nav-btn:active {
   background: color-mix(in srgb, var(--main-color), black 20%);
