@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>جزئیات محصول</title>
+ <style>/* ===== صفحه تک محصول ===== */
+
+/* ===== Product Detail Page (namespaced) ===== */
+
+/* ===== Product Detail – Isolated Styles ===== */
+
+.prd-wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(98, 0, 238, 0.15);
+}
+
+.prd-main {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prd-image {
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.prd-info {
+  flex: 1;
+}
+
+.prd-title {
+  margin-top: 0;
+  color: var( --main-color);
+}
+
+.prd-rating-text {
+  color: #444;
+}
+
+.prd-description {
+  line-height: 1.8;
+  color: #444;
+  margin: 10px 0;
+}
+
+/* ===== Related ===== */
+
+.prd-related {
+  margin-top: 50px;
+}
+
+.prd-section-title {
+  color: var( --main-color);
+  margin-bottom: 15px;
+}
+
+.prd-related-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.prd-related-item {
+  background: var( --accent-color);
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var( --main-color);
+}
+
+/* ===== Comments ===== */
+
+.prd-comments {
+  margin-top: 50px;
+}
+
+.prd-comment-input {
+  width: 100%;
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  resize: none;
+}
+
+.prd-comment-input:focus {
+  outline: none;
+  border-color: var( --main-color);
+  box-shadow: 0 0 0 3px rgba(98, 0, 238, 0.2);
+}
+
+.prd-comment-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 16px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.prd-comment-author {
+  color: var( --main-color);
+}
+
+.prd-comment-text {
+  margin: 8px 0 0;
+  color: #333;
+}
+
+        .rating {
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .star {
+            font-size: 40px;
+            color: #ccc; /* ستاره توخالی */
+            transition: color 0.2s;
+        }
+
+        .star.filled {
+            color: gold; /* ستاره توپر طلایی */
+        }
+
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <header>
+    <nav>
+      <img class="logo" src="./b8db69d6-fff4-4fc5-988c-d730391dace8.png" alt="logo">
+      <h1>FASHIONISTA</h1>
+      <ul>
+
+        
+        <li><a class="m3-nav-btn" href="shop.html">فروشگاه</a></li>
+        <li><a class="m3-nav-btn" href="about us.html">درباره ما</a></li>
+    
+        <li><a class="m3-nav-btn" href="service.html">خدمات</a></li>
+        <li><a class="m3-nav-btn" href="contact.html">تماس با ما</a></li>
+            <li><a class="m3-nav-btn" href="adminpanel.html">پنل ادمین</a></li>
+        <li><a class="m3-nav-btn" href="index.html">تنظیمات</a></li>
+        <li><a class="m3-nav-btn" href="cart.html" class="cart-btn">🛒 سبد خرید</a></li>
+      </ul>
+    </nav>
+  </header>
+<section class="prd-wrapper">
+
+  <div class="prd-main">
+    <img class="prd-image"
+         src="https://axprint.com/blog/wp-content/uploads/Elegant-Evening-Dresses-41.webp">
+
+    <div class="prd-info">
+      <h2 class="prd-title">پیراهن مجلسی</h2>
+
+      <!-- اینجا بعداً ستاره کلیکی میاد -->
+      <p class="prd-rating-text">امتیاز کاربران: ⭐⭐⭐⭐☆ (4.6)</p>
+
+      <p class="prd-description">
+        پیراهن مجلسی زنانه با طراحی شیک، مناسب مراسم رسمی،
+        تهیه‌شده از پارچه با کیفیت و دوخت حرفه‌ای.
+      </p>
+
+      <button class="md-btn btn-round btn-hover btn-focus">
+        افزودن به سبد خرید
+      </button>
+    </div>
+  </div>
+
+  <!-- محصولات مرتبط -->
+  <div class="prd-related">
+    <h3 class="prd-section-title">محصولات مرتبط</h3>
+    <ul class="prd-related-list">
+      <li class="prd-related-item">کت زنانه رسمی</li>
+      <li class="prd-related-item">کیف دستی مجلسی</li>
+      <li class="prd-related-item">کفش پاشنه‌دار</li>
+    </ul>
+  </div>
+
+  <!-- نظرات -->
+  <div class="prd-comments">
+    <h3 class="prd-section-title">نظرات کاربران</h3>
+
+    <textarea class="prd-comment-input"
+              placeholder="نظر خود را بنویسید..."></textarea>
+
+    <button class="md-btn btn-round btn-hover btn-focus">
+      ثبت نظر
+    </button>
+
+    <div class="prd-comment-box">
+      <strong class="prd-comment-author">سارا</strong>
+      <p class="prd-comment-text">
+        خیلی شیک و کیفیتش عالی بود ❤️
+      </p>
+    </div>
+
+    <div class="prd-comment-box">
+      <strong class="prd-comment-author">مینا</strong>
+      <p class="prd-comment-text">
+        دقیقاً همونی بود که می‌خواستم
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  <div class="footer-box">
+    
+
+    <div class="footer-col">
+      <h3>تماس با ما</h3>
+      <p>📍 تهران، خیابان مثال، پلاک ۱۲۳</p>
+      <p>📞 021-12345678</p>
+      <p>✉ info@fashionista.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>شبکه‌های اجتماعی</h3>
+      <a href="https://instagram.com/fashionista" target="_blank" class="insta-link">📸 اینستاگرام</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © fashionista 2025 | طراحی توسط مانی
+
+  </div>
+</footer>
+
+</body>
+</html>

@@ -5,49 +5,180 @@
   <link rel="icon" href="./b8db69d6-fff4-4fc5-988c-d730391dace8.png">
   <title>فروشگاه مد و پوشاک</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+       
+        .settings {
+            background: #fff;
+            max-width: 500px;
+            min-height: 70vh;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .setting-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== Material Switch ===== */
+        .switch {
+            position: relative;
+            width: 50px;
+            height: 28px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background-color: #ccc;
+            border-radius: 34px;
+            transition: 0.3s;
+        }
+
+        .slider::before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        /* enabled (checked) */
+        input:checked + .slider {
+            background-color: #6200ee;
+        }
+
+        input:checked + .slider::before {
+            transform: translateX(22px);
+        }
+
+        /* hover */
+        .switch:hover .slider {
+            box-shadow: 0 0 0 4px rgba(98,0,238,0.1);
+        }
+
+        /* focus */
+        input:focus + .slider {
+            box-shadow: 0 0 0 4px rgba(98,0,238,0.25);
+        }
+
+        /* pressed (active) */
+        .switch:active .slider::before {
+            width: 26px;
+        }
+
+        /* disabled */
+        input:disabled + .slider {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+
+        input:disabled + .slider::before {
+            background-color: #bdbdbd;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
+ <header>
+    <nav>
+      <img class="logo" src="./b8db69d6-fff4-4fc5-988c-d730391dace8.png" alt="logo">
+      <h1>FASHIONISTA</h1>
+      <ul>
 
-<nav>
-
-  <img class="logo" src="./b8db69d6-fff4-4fc5-988c-d730391dace8.png"><h1>FASHIONISTA</h1>
-  <ul>
+        
+        <li><a class="m3-nav-btn" href="shop.html">فروشگاه</a></li>
+        <li><a class="m3-nav-btn" href="about us.html">درباره ما</a></li>
     
-    <li><a class="m3-nav-btn" href="index.html">خانه</a></li>
-    <li><a class="m3-nav-btn" href="shop.html">فروشگاه</a></li>
-    <li><a class="m3-nav-btn" href="about us.html">درباره ما</a></li>
-     <li><a class="m3-nav-btn" href="../adminpanel.html">پنل ادمین</a></li>
-      <li><a class="m3-nav-btn" href="service.html">خدمات</a></li>
-    <li><a class="m3-nav-btn" href="contact.html">تماس با ما</a></li>
-    <li><a class="m3-nav-btn" href="cart.html" class="cart-btn">🛒 سبد خرید</a></li>
-  </ul>
-</nav>
+        <li><a class="m3-nav-btn" href="service.html">خدمات</a></li>
+        <li><a class="m3-nav-btn" href="contact.html">تماس با ما</a></li>
+            <li><a class="m3-nav-btn" href="adminpanel.html">پنل ادمین</a></li>
+        <li><a class="m3-nav-btn" href="index.html">تنظیمات</a></li>
+        <li><a class="m3-nav-btn" href="cart.html" class="cart-btn">🛒 سبد خرید</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="maincontent">
-  <h2>به فروشگاه مد و پوشاک ما خوش آمدید</h2>
-  <p>جدیدترین لباس‌ها و اکسسوری‌ها را با بهترین کیفیت و قیمت تجربه کنید.</p>
-</section>
-<footer class="footer">
-  <div class="footer-box">
-    
+<div class="settings">
+    <h2>تنظیمات نرم‌افزار</h2>
 
-    <div class="footer-col">
-      <h3>تماس با ما</h3>
-      <p>📍 تهران، خیابان مثال، پلاک ۱۲۳</p>
-      <p>📞 021-12345678</p>
-      <p>✉ info@fashionista.com</p>
+    <div class="setting-item">
+        <span>حالت تیره (Dark Mode)</span>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
     </div>
 
-    <div class="footer-col">
-      <h3>شبکه‌های اجتماعی</h3>
-      <a href="https://instagram.com/fashionista" target="_blank" class="insta-link">📸 اینستاگرام</a>
+    <div class="setting-item">
+        <span>اعلان‌ها</span>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    © fashionista 2025 | طراحی توسط مانی
+    <div class="setting-item">
+        <span>پخش خودکار ویدئو</span>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
 
-  </div>
-</footer>
+    <div class="setting-item">
+        <span>همگام‌سازی ابری</span>
+        <label class="switch">
+            <input type="checkbox" disabled>
+            <span class="slider"></span>
+        </label>
+    </div>
+
+</div>
+  <footer class="footer">
+    <div class="footer-box">
+
+
+      <div class="footer-col">
+        <h3>تماس با ما</h3>
+        <p>📍 تهران، خیابان مثال، پلاک ۱۲۳</p>
+        <p>📞 021-12345678</p>
+        <p>✉ info@fashionista.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>شبکه‌های اجتماعی</h3>
+        <a href="https://instagram.com/fashionista" target="_blank" class="insta-link">📸 اینستاگرام</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © fashionista 2025 | طراحی توسط مانی
+
+    </div>
+  </footer>
 </body>
 </html>

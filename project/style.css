@@ -56,7 +56,9 @@
   cursor: not-allowed;
   pointer-events: none;
 }
-
+body{
+  min-height: 100vh;
+}
 .btn-hover {
   background-color: var(--main-color);
 }

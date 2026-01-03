@@ -1,72 +1,141 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="./b8db69d6-fff4-4fc5-988c-d730391dace8.png">
   <title>فروشگاه</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=favorite" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=favorite" />
+    
 </head>
-<body>
-<header>
-  <nav>
-  <img class="logo" src="./b8db69d6-fff4-4fc5-988c-d730391dace8.png" alt="logo"><h1>FASHIONISTA</h1>
-  <ul>
-   
-    <li><a class="m3-nav-btn" href="index.html">خانه</a></li>
-    <li><a class="m3-nav-btn" href="shop.html">فروشگاه</a></li>
-    <li><a class="m3-nav-btn" href="about us.html">درباره ما</a></li>
-     <li><a class="m3-nav-btn" href="../adminpanel.html">پنل ادمین</a></li>
-      <li><a class="m3-nav-btn" href="service.html">خدمات</a></li>
-    <li><a class="m3-nav-btn" href="contact.html">تماس با ما</a></li>
-    <li><a class="m3-nav-btn" href="cart.html" class="cart-btn">🛒 سبد خرید</a></li>
-  </ul>
-</nav>
-</header>
 
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="./b8db69d6-fff4-4fc5-988c-d730391dace8.png" alt="logo">
+      <h1>FASHIONISTA</h1>
+      <ul>
+
+        
+        <li><a class="m3-nav-btn" href="shop.html">فروشگاه</a></li>
+        <li><a class="m3-nav-btn" href="about us.html">درباره ما</a></li>
+    
+        <li><a class="m3-nav-btn" href="service.html">خدمات</a></li>
+        <li><a class="m3-nav-btn" href="contact.html">تماس با ما</a></li>
+            <li><a class="m3-nav-btn" href="adminpanel.html">پنل ادمین</a></li>
+        <li><a class="m3-nav-btn" href="index.html">تنظیمات</a></li>
+        <li><a class="m3-nav-btn" href="cart.html" class="cart-btn">🛒 سبد خرید</a></li>
+      </ul>
+    </nav>
+  </header>
 
 <section>
   <h2>محصولات ما</h2>
-  <div class="products ">
-    <div class="product md-card card-enabled">
-      <img src="https://axprint.com/blog/wp-content/uploads/Elegant-Evening-Dresses-41.webp" alt="لباس 1">
+
+  <!-- فیلترها -->
+  <div class="filters">
+    <input type="text" class="md-input" placeholder="جستجوی محصول...">
+
+    <select class="md-input">
+      <option>همه دسته‌ها</option>
+      <option>لباس مجلسی</option>
+      <option>کت زنانه</option>
+      <option>اکسسوری</option>
+    </select>
+
+    <select class="md-input">
+      <option>مرتب‌سازی</option>
+      <option>ارزان‌ترین</option>
+      <option>گران‌ترین</option>
+      <option>پرفروش‌ترین</option>
+    </select>
+
+    <a href="#" class="m3-nav-btn">🔥 پرفروش‌ها</a>
+  </div>
+
+  <div class="products">
+
+    <!-- محصول ۱ -->
+    <div class="product md-card card-enabled"
+     data-category="لباس مجلسی"
+     data-price="450"
+     data-rate="4.6"
+     data-best="true"
+ class="product md-card card-enabled">
+      <img src="https://axprint.com/blog/wp-content/uploads/Elegant-Evening-Dresses-41.webp">
       <h3>پیراهن مجلسی</h3>
       <p>قیمت: ۴۵۰ هزار تومان</p>
-      <button class="md-btn btn-round btn-hover btn-focus">افزودن به سبد خرید</button>
+      <p>⭐ 4.6</p>
 
+      <span class="likedpar">
+        <span class="material-symbols-outlined likedch">favorite</span>
+      </span>
+
+      <a href="product.html">
+        <button class="md-btn btn-round btn-hover btn-focus">
+          مشاهده محصول
+        </button>
+      </a>
     </div>
 
-    <div class="product md-card card-enabled ">
-      <img src="https://patanjameh.ir/host/patanjameh/2024/7/93210048333157.jpg" alt="لباس 2">
+    <!-- محصول ۲ -->
+   <div class="product md-card card-enabled"
+     data-category="کت زنانه"
+     data-price="650"
+     data-rate="4.3"
+     data-best="false"
+ class="product md-card card-enabled">
+      <img src="https://patanjameh.ir/host/patanjameh/2024/7/93210048333157.jpg">
       <h3>کت زنانه</h3>
       <p>قیمت: ۶۵۰ هزار تومان</p>
-      <button class="md-btn btn-round btn-hover btn-focus">افزودن به سبد خرید</button>
+      <p>⭐ 4.3</p>
+
+      <span class="likedpar">
+        <span class="material-symbols-outlined likedch">favorite</span>
+      </span>
+
+      <a href="product.html">
+        <button class="md-btn btn-round btn-hover btn-focus">
+          مشاهده محصول
+        </button>
+      </a>
     </div>
+
   </div>
 </section>
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-box">
-    
 
-    <div class="footer-col">
-      <h3>تماس با ما</h3>
-      <p>📍 تهران، خیابان مثال، پلاک ۱۲۳</p>
-      <p>📞 021-12345678</p>
-      <p>✉ info@fashionista.com</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-box">
+
+
+      <div class="footer-col">
+        <h3>تماس با ما</h3>
+        <p>📍 تهران، خیابان مثال، پلاک ۱۲۳</p>
+        <p>📞 021-12345678</p>
+        <p>✉ info@fashionista.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>شبکه‌های اجتماعی</h3>
+        <a href="https://instagram.com/fashionista" target="_blank" class="insta-link">📸 اینستاگرام</a>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h3>شبکه‌های اجتماعی</h3>
-      <a href="https://instagram.com/fashionista" target="_blank" class="insta-link">📸 اینستاگرام</a>
+    <div class="footer-bottom">
+      © fashionista 2025 | طراحی توسط مانی
+
     </div>
-  </div>
+  </footer>
 
-  <div class="footer-bottom">
-    © fashionista 2025 | طراحی توسط مانی
-
-  </div>
-</footer>
-
-
+  <script src="project.js"></script>
+  
 </body>
+
 </html>
